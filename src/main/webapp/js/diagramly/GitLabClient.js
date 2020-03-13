@@ -11,7 +11,7 @@ GitLabClient = function(editorUi)
 mxUtils.extend(GitLabClient, GitHubClient);
 
 /**
- * Gitlab Client ID, see https://gitlab.com/oauth/applications/135239
+ * Gitlab Client ID, see ￿
  */
 GitLabClient.prototype.clientId = DRAWIO_GITLAB_ID;
 
@@ -47,10 +47,13 @@ GitLabClient.prototype.authenticate = function(success, error)
 				var href = window.location.href;
 				var dir = href.substring(0, href.lastIndexOf('/'));
 				var redirectUri = encodeURIComponent(dir + '/gitlab.html');
+				// var win = window.open(DRAWIO_GITLAB_URL + '/oauth/authorize?client_id=' +
+				// 	this.clientId + '&scope=' + this.scope + '&redirect_uri=' + redirectUri +
+				// 	'&response_type=token&state=' + state, 'gitlabauth');
 				var win = window.open(DRAWIO_GITLAB_URL + '/oauth/authorize?client_id=' +
-					this.clientId + '&scope=' + this.scope + '&redirect_uri=' + redirectUri +
+					this.clientId + '&redirect_uri=' + redirectUri +
 					'&response_type=token&state=' + state, 'gitlabauth');
-				
+
 				if (win != null)
 				{
 					window.onGitLabCallback = mxUtils.bind(this, function(code, authWindow)

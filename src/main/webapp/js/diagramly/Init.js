@@ -22,8 +22,13 @@ window.DRAW_MATH_URL = window.DRAW_MATH_URL || 'https://www.draw.io/math';
 window.VSD_CONVERT_URL = window.VSD_CONVERT_URL || 'https://convert.draw.io/VsdConverter/api/converter';
 window.EMF_CONVERT_URL = window.EMF_CONVERT_URL || 'https://convert.draw.io/emf2png/convertEMF';
 window.REALTIME_URL = window.REALTIME_URL || 'https://rt.draw.io/cache';
-window.DRAWIO_GITLAB_URL = window.DRAWIO_GITLAB_URL || 'https://gitlab.com';
-window.DRAWIO_GITLAB_ID = window.DRAWIO_GITLAB_ID || '5cdc018a32acddf6eba37592d9374945241e644b8368af847422d74c8709bc44';
+// window.DRAWIO_GITLAB_URL = window.DRAWIO_GITLAB_URL || 'https://gitlab.com'
+// window.DRAWIO_GITLAB_ID = window.DRAWIO_GITLAB_ID || '4545cd1cec091815bb2990e11cedd8d1612cf8eefde07092f3f9d0ee5f205d01'
+// 个人 gitlab
+// window.DRAWIO_GITLAB_URL = window.DRAWIO_GITLAB_URL	|| 'https://gitlab.gusaifei.com' || 'https://gitlab.com';
+// window.DRAWIO_GITLAB_ID = window.DRAWIO_GITLAB_ID || 'afffdcbc94cd53e7f06cdbddb4b5e05f0e2b51496736dcc2c190b25cb40bc232' || '5cdc018a32acddf6eba37592d9374945241e644b8368af847422d74c8709bc44';
+window.DRAWIO_GITLAB_URL = window.DRAWIO_GITLAB_URL	|| 'https://glab.tagtic.cn' || 'https://gitlab.com';
+window.DRAWIO_GITLAB_ID = window.DRAWIO_GITLAB_ID || '18c5f54c0ce44cb78e5b0712b50bd5cde5ff4123d2d0e4b901ede79974ac4e25' || '5cdc018a32acddf6eba37592d9374945241e644b8368af847422d74c8709bc44';
 window.SAVE_URL = window.SAVE_URL || 'save';
 window.OPEN_URL = window.OPEN_URL || 'open';
 window.PROXY_URL = window.PROXY_URL || 'proxy';
